@@ -66,6 +66,13 @@ Acesse: **[http://localhost:5173/simulator](http://localhost:5173/simulator)**
 - Volte ao Catálogo e clique na máquina que você ativou.
 - Você verá os gráficos e valores atualizando em tempo real, como se estivesse assistindo a um "filme" dos dados da máquina.
 
+### 4. Arquiteturas de Fluxo
+Acesse: **[http://localhost:5173/flows](http://localhost:5173/flows)**
+- Visualize animações interativas de 3 tipos de arquiteturas IoT:
+  1. **Padrão (Pull)**: Sensor -> Backend -> Banco. Usuário busca.
+  2. **Direto & Paralelo**: Sensor -> Usuário (Tempo Real) + Backend (Armazenamento).
+  3. **Backend Push**: Backend processa e empurra para o usuário.
+
 ## 🛠 Tecnologias 
 
 - **Frontend**: React, Vite, TailwindCSS, Recharts, Socket.io-client
