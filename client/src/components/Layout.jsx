@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { MonitorPlay, Settings2 } from 'lucide-react';
+import { MonitorPlay, Settings2, Activity } from 'lucide-react';
 
 const Layout = ({ children }) => {
     const location = useLocation();
@@ -26,6 +26,13 @@ const Layout = ({ children }) => {
                     >
                         <Settings2 size={16} />
                         Simulador
+                    </Link>
+                    <Link
+                        to="/flows"
+                        className={`flex items-center gap-2 text-sm font-medium transition-colors ${location.pathname === '/flows' ? 'text-white' : 'text-gray-400 hover:text-white'}`}
+                    >
+                        <Activity size={16} />
+                        Fluxos
                     </Link>
                 </div>
             </nav>
