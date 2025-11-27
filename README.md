@@ -66,7 +66,7 @@ Acesse: **[http://localhost:5173/simulator](http://localhost:5173/simulator)**
 - Volte ao Catálogo e clique na máquina que você ativou.
 - Você verá os gráficos e valores atualizando em tempo real, como se estivesse assistindo a um "filme" dos dados da máquina.
 
-## 🛠 Tecnologias
+## 🛠 Tecnologias 
 
 - **Frontend**: React, Vite, TailwindCSS, Recharts, Socket.io-client
 - **Backend**: Node.js, Express, Socket.io
