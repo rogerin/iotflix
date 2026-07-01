@@ -37,3 +37,52 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+.scada-pipe-flow {
+  stroke-dasharray: 12 18;
+  animation: scada-pipe-flow 900ms linear infinite;
+}
+
+.scada-rotor {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: scada-rotor 1.2s linear infinite;
+}
+
+.scada-alarm-ring {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: scada-alarm-ring 1.4s ease-in-out infinite;
+}
+
+@keyframes scada-pipe-flow {
+  to {
+    stroke-dashoffset: -30;
+  }
+}
+
+@keyframes scada-rotor {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scada-alarm-ring {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scada-pipe-flow,
+  .scada-rotor,
+  .scada-alarm-ring {
+    animation: none;
+  }
+}

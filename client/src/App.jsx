@@ -5,6 +5,7 @@ import Catalog from './pages/Catalog';
 import Dashboard from './pages/Dashboard';
 import Simulator from './pages/Simulator';
 import FlowsPage from './pages/FlowsPage';
+import ScadaLab from './pages/ScadaLab';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/watch/:id" element={<Dashboard />} />
           <Route path="/simulator" element={<Simulator />} />
           <Route path="/flows" element={<FlowsPage />} />
+          <Route path="/scada-lab" element={<ScadaLab />} />
         </Routes>
       </Layout>
     </Router>
